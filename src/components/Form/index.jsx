@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable react/button-has-type */
 import React, { Component } from "react";
 import fire from "../../fire.jsx";
 
@@ -34,7 +33,7 @@ class Form extends Component {
     // eslint-disable-next-line react/destructuring-assignment
     fire
       .database()
-      .ref("messages")
+      .ref("form")
       // eslint-disable-next-line react/destructuring-assignment
       .push([this.state.satisfaction, this.state.team]);
     this.setState({
@@ -157,7 +156,10 @@ class Form extends Component {
           />
           <label htmlFor="one_satisfaction_score">Muito satisfeito</label>
         </div>
-        <button onClick={this.handleSubmit}> Save </button>
+        <button onClick={this.handleSubmit} type="submit">
+          {" "}
+          Save{" "}
+        </button>
       </div>
     );
   }
