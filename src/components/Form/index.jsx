@@ -83,7 +83,7 @@ class Form extends Component {
             type="radio"
             onChange={this.handleTeam}
             id="more"
-            name="fav_language"
+            name="team_number"
             value="15 ou mais"
           />
           <label htmlFor="more">15 ou mais</label>
