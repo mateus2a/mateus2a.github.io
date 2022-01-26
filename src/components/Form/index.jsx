@@ -35,7 +35,7 @@ class Form extends Component {
       .database()
       .ref("form")
       // eslint-disable-next-line react/destructuring-assignment
-      .push([this.state.satisfaction, this.state.team]);
+      .push({ team: this.state.team, satisfaction: this.state.satisfaction });
     this.setState({
       satisfaction: "",
       team: "",
