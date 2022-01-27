@@ -53,6 +53,7 @@ class Form extends Component {
             id="one"
             name="team_number"
             value="1 até 3"
+            required
           />
           <label htmlFor="one">1 até 3</label>
           <input
@@ -96,63 +97,64 @@ class Form extends Component {
             onChange={this.handleSatisfaction}
             id="one_satisfaction_score"
             name="satisfaction_score"
-            value="1"
+            value={1}
+            required
           />
           <label htmlFor="one_satisfaction_score">Pouco satisfeito</label>
           <input
             type="radio"
             onChange={this.handleSatisfaction}
             name="satisfaction_score"
-            value="2"
+            value={2}
           />
           <input
             type="radio"
             onChange={this.handleSatisfaction}
             name="satisfaction_score"
-            value="3"
+            value={3}
           />
           <input
             type="radio"
             onChange={this.handleSatisfaction}
             name="satisfaction_score"
-            value="4"
+            value={4}
           />
           <input
             type="radio"
             onChange={this.handleSatisfaction}
             name="satisfaction_score"
-            value="5"
+            value={5}
           />
           <input
             type="radio"
             onChange={this.handleSatisfaction}
             name="satisfaction_score"
-            value="6"
+            value={6}
           />
           <input
             type="radio"
             onChange={this.handleSatisfaction}
             name="satisfaction_score"
-            value="7"
+            value={7}
           />
           <input
             type="radio"
             onChange={this.handleSatisfaction}
             name="satisfaction_score"
-            value="8"
+            value={8}
           />
           <input
             type="radio"
             onChange={this.handleSatisfaction}
             name="satisfaction_score"
-            value="9"
+            value={9}
           />
           <input
             type="radio"
             onChange={this.handleSatisfaction}
             id="one_satisfaction_score"
             name="satisfaction_score"
-            value="10"
+            value={10}
           />
           <label htmlFor="one_satisfaction_score">Muito satisfeito</label>
         </div>

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/button-has-type */
 import React, { Component } from "react";
 import Form from "./components/Form/index.jsx";
