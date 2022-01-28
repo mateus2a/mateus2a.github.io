@@ -29,6 +29,7 @@ class App extends Component {
             >
               <Welcome />
               <Form />
+              <GraphTeam />
             </Box>
           </Container>
         </div>
