@@ -1,0 +1,24 @@
+.welcome-cat {
+  display:block;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+img {
+  background-color: #F5F6FF;
+}
+
+@media screen and (max-width: 899px) {
+  .welcome {
+    padding-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 899px) {
+  .welcome-cat {
+    padding-top: 2rem;
+  }
+}
+
