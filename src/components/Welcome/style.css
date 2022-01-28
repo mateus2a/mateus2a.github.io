@@ -1,0 +1,16 @@
+.center {
+  padding-top: 8rem;
+}
+
+.welcome-cat {
+  display:block;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  padding-top: 2rem;
+}
+
+img {
+  background-color: #F5F6FF;
+}
