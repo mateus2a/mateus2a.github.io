@@ -14,10 +14,11 @@ function Welcome() {
         <Box
           sx={{
             bgcolor: "#F5F6FF",
-            height: "70vh",
+            height: "60vh",
             borderRadius: 6,
             boxShadow: 1,
           }}
+          className="box"
         >
           <div className="welcome">
             <img src={WelcolmeCat} alt="Welcome Cat" className="welcome-cat" />
