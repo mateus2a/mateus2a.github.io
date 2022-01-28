@@ -4,6 +4,8 @@
 /* eslint-disable react/jsx-no-bind */
 import React, { useEffect, useState } from "react";
 import { ResponsiveBar } from "@nivo/bar";
+import $ from "jquery";
+import Button from "../Button/index.jsx";
 import fire from "../../fire.jsx";
 
 import "./style.css";
@@ -33,6 +35,10 @@ function GraphTeam() {
     return todos[key];
   });
 
+  const resetPage = () => {
+    document.location.reload(true);
+  };
+
   return (
     <div style={{ height: 200 }} className="graph">
       <ResponsiveBar
@@ -51,10 +57,16 @@ function GraphTeam() {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: "degrees",
+          legend: "Número de Respostas",
           legendPosition: "middle",
           legendOffset: -40,
         }}
+      />
+      <Button
+        title="Voltar ao Início"
+        id="reset"
+        action={resetPage}
+        className="reloud_button"
       />
     </div>
   );
