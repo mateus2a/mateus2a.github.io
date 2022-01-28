@@ -1,10 +1,15 @@
 import React from "react";
+import $ from "jquery";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import WelcolmeCat from "../../assets/welcome_cats_thqn.svg";
 import Button from "../Button/index.jsx";
 import "./style.css";
+
+function initForm() {
+  $(".welcome").css("display", "none");
+}
 
 function Welcome() {
   return (
@@ -22,7 +27,7 @@ function Welcome() {
         >
           <div className="welcome">
             <img src={WelcolmeCat} alt="Welcome Cat" className="welcome-cat" />
-            <Button title="Preencher Form" />
+            <Button title="Preencher Form" action={initForm} />
           </div>
         </Box>
       </Container>

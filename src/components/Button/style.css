@@ -1,11 +1,10 @@
-.center-button {
+.wrapper {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 @media screen and (max-width: 899px) {
-  .center-button {
+  .wrapper {
     padding-top: 2rem;
   }
 }

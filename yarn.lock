@@ -1631,7 +1631,7 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@mui/base@5.0.0-alpha.66":
+"@mui/base@5.0.0-alpha.66", "@mui/base@^5.0.0-alpha.66":
   version "5.0.0-alpha.66"
   resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.66.tgz#5f03e641daecbc54a7b03d6368e625fef45cb7e4"
   integrity sha512-LARfVx0HmGV5YwU2pdIqEApQwz/CtEnYtKkV856hlY0cgi5NQL2htzZ/9ujKz0j3LFUaMYiYuJ2AOwrNtGFGrw==
@@ -7651,18 +7651,9 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
-  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
-  dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.13.1"
-
-prop-types@^15.8.1:
-  version "15.8.1"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
   dependencies:
     loose-envify "^1.4.0"
