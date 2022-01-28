@@ -6,6 +6,8 @@ import React, { useEffect, useState } from "react";
 import { ResponsiveBar } from "@nivo/bar";
 import fire from "../../fire.jsx";
 
+import "./style.css";
+
 function GraphTeam() {
   const [todos, setTodos] = useState([]);
   useEffect(() => {
@@ -31,9 +33,8 @@ function GraphTeam() {
     return todos[key];
   });
 
-  console.log(d);
   return (
-    <div style={{ height: 200 }}>
+    <div style={{ height: 200 }} className="graph">
       <ResponsiveBar
         data={d}
         keys={["satisfaction"]}

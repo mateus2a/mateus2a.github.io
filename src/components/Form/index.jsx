@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { Component } from "react";
 import fire from "../../fire.jsx";
+import "./style.css";
 
 class Form extends Component {
   // eslint-disable-next-line react/state-in-constructor
@@ -44,7 +45,7 @@ class Form extends Component {
 
   render() {
     return (
-      <div className="App-header">
+      <div className="form">
         <div>
           <p>Quantas pessoas tem sua equipe?</p>
           <input
