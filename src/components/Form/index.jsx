@@ -21,9 +21,16 @@ class Form extends Component {
   };
 
   seeResults = () => {
-    $(".welcome").css("display", "none");
-    $(".form").css("display", "none");
-    $(".graph").css("display", "block");
+    if ($("input[name=team_number]:checked").length <= 0) {
+      $(".question_one").css("color", "red");
+    }
+    if ($("input[name=satisfaction_score]:checked").length <= 0) {
+      $(".question_two").css("color", "red");
+    } else {
+      $(".welcome").css("display", "none");
+      $(".form").css("display", "none");
+      $(".graph").css("display", "block");
+    }
   };
 
   // eslint-disable-next-line react/no-unused-class-component-methods
