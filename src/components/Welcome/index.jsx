@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import WelcolmeCat from "../../assets/welcome_cats_thqn.svg";
-
+import Button from "../Button/index.jsx";
 import "./style.css";
 
 function Welcome() {
@@ -21,6 +21,7 @@ function Welcome() {
         >
           <div className="welcome">
             <img src={WelcolmeCat} alt="Welcome Cat" className="welcome-cat" />
+            <Button title="Preencher Form" />
           </div>
         </Box>
       </Container>
