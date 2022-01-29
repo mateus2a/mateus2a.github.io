@@ -25,10 +25,10 @@ class Form extends Component {
   // eslint-disable-next-line react/no-unused-class-component-methods
   seeResults = () => {
     if ($("input[name=team_number]:checked").length <= 0) {
-      $(".question_one").css("color", "red");
+      $(".question_one_title").css("color", "red");
     }
-    if ($("input[name=satisfaction_score]:checked").length <= 0) {
-      $(".question_two").css("color", "red");
+    if ($("input[name=satisfaction]:checked").length <= 0) {
+      $(".question_two_title").css("color", "red");
     } else {
       $(".welcome").css("display", "none");
       $(".form").css("display", "none");
@@ -70,7 +70,12 @@ class Form extends Component {
         sx={{ mx: "auto", width: "100%", padding: 6, maxWidth: 800 }}
       >
         <div className="question-one">
-          <Typography variant="h5" component="div" gutterBottom>
+          <Typography
+            variant="h5"
+            component="div"
+            gutterBottom
+            className="question_one_title"
+          >
             Quantas pessoas tem sua equipe?
           </Typography>
           <div className="answers-question-one">
@@ -144,7 +149,12 @@ class Form extends Component {
         </div>
 
         <div className="question-two">
-          <Typography variant="h5" component="div" gutterBottom>
+          <Typography
+            variant="h5"
+            component="div"
+            gutterBottom
+            className="question_two_title"
+          >
             Qual a sua satisfação com a empresa?
           </Typography>
           <div className="answers-question-two">
@@ -153,7 +163,7 @@ class Form extends Component {
                 type="radio"
                 onChange={this.handleSatisfaction}
                 id="one_satisfaction_score"
-                name="satisfaction_score"
+                name="satisfaction"
                 value={1}
                 className="satisfaction_score"
                 required
@@ -169,7 +179,7 @@ class Form extends Component {
               <input
                 type="radio"
                 onChange={this.handleSatisfaction}
-                name="satisfaction_score"
+                name="satisfaction"
                 value={2}
                 className="satisfaction_score"
               />
@@ -178,7 +188,7 @@ class Form extends Component {
               <input
                 type="radio"
                 onChange={this.handleSatisfaction}
-                name="satisfaction_score"
+                name="satisfaction"
                 value={3}
                 className="satisfaction_score"
               />
@@ -187,7 +197,7 @@ class Form extends Component {
               <input
                 type="radio"
                 onChange={this.handleSatisfaction}
-                name="satisfaction_score"
+                name="satisfaction"
                 value={4}
                 className="satisfaction_score"
               />
@@ -196,7 +206,7 @@ class Form extends Component {
               <input
                 type="radio"
                 onChange={this.handleSatisfaction}
-                name="satisfaction_score"
+                name="satisfaction"
                 value={5}
                 className="satisfaction_score"
               />
@@ -205,7 +215,7 @@ class Form extends Component {
               <input
                 type="radio"
                 onChange={this.handleSatisfaction}
-                name="satisfaction_score"
+                name="satisfaction"
                 value={6}
                 className="satisfaction_score"
               />
@@ -214,7 +224,7 @@ class Form extends Component {
               <input
                 type="radio"
                 onChange={this.handleSatisfaction}
-                name="satisfaction_score"
+                name="satisfaction"
                 value={7}
                 className="satisfaction_score"
               />
@@ -223,7 +233,7 @@ class Form extends Component {
               <input
                 type="radio"
                 onChange={this.handleSatisfaction}
-                name="satisfaction_score"
+                name="satisfaction"
                 value={8}
                 className="satisfaction_score"
               />
@@ -232,7 +242,7 @@ class Form extends Component {
               <input
                 type="radio"
                 onChange={this.handleSatisfaction}
-                name="satisfaction_score"
+                name="satisfaction"
                 value={9}
                 className="satisfaction_score"
               />
@@ -242,7 +252,7 @@ class Form extends Component {
                 type="radio"
                 onChange={this.handleSatisfaction}
                 id="one_satisfaction_score"
-                name="satisfaction_score"
+                name="satisfaction"
                 value={10}
                 className="satisfaction_score"
               />
