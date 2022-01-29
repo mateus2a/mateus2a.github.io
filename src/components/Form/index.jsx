@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unused-class-component-methods */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { Component } from "react";
 import $ from "jquery";
@@ -20,6 +22,7 @@ class Form extends Component {
     });
   };
 
+  // eslint-disable-next-line react/no-unused-class-component-methods
   seeResults = () => {
     if ($("input[name=team_number]:checked").length <= 0) {
       $(".question_one").css("color", "red");
@@ -30,6 +33,7 @@ class Form extends Component {
       $(".welcome").css("display", "none");
       $(".form").css("display", "none");
       $(".graph").css("display", "block");
+      this.handleSubmit();
     }
   };
 
@@ -40,7 +44,6 @@ class Form extends Component {
     });
   };
 
-  // eslint-disable-next-line no-unused-vars
   handleSubmit = (e) => {
     // eslint-disable-next-line no-unused-vars
     const messageRef = fire
@@ -253,11 +256,7 @@ class Form extends Component {
           </div>
         </div>
 
-        <Button
-          title="Ver Resultados"
-          action={this.seeResults}
-          onClick={this.handleSubmit}
-        />
+        <Button title="Ver Resultados" action={this.seeResults} />
       </Box>
     );
   }
