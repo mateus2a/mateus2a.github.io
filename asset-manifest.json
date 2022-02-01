@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kpis/static/css/main.eb8d69de.css",
+    "main.js": "/kpis/static/js/main.1042a513.js",
+    "static/media/welcome_cats_thqn.svg": "/kpis/static/media/welcome_cats_thqn.b6a961e7c2cb26b22d867535c4d20419.svg",
+    "index.html": "/kpis/index.html",
+    "main.eb8d69de.css.map": "/kpis/static/css/main.eb8d69de.css.map",
+    "main.1042a513.js.map": "/kpis/static/js/main.1042a513.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb8d69de.css",
+    "static/js/main.1042a513.js"
+  ]
+}
